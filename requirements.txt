@@ -2,6 +2,10 @@ pandas
 numpy
 seaborn
 matplotlib
+scikit-learn
 torch
 torchvision
 torchaudio
+
+# -e .
+# pip install -r requirements.txt
