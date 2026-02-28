@@ -1,3 +1,5 @@
+# This folder makes this project behave like a professional Python package.
+
 from setuptools import find_packages, setup
 
 HYPEN_EDOT='-e .'

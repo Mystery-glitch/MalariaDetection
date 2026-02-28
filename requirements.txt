@@ -1,11 +1,13 @@
-pandas 
-numpy
-seaborn
-matplotlib
-scikit-learn
 torch
 torchvision
-torchaudio
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+tqdm
+flask
+pillow
 
 # -e .
 # pip install -r requirements.txt
