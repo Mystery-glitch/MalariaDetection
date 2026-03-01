@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malaria Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🦠 Malaria Detection using CNN</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if image_path %}
+        <div class="image-box">
+            <img src="{{ url_for('static', filename='uploads/' + image_path.split('/')[-1]) }}">
+        </div>
+    {% endif %}
+
+    {% if prediction %}
+        <div class="result">
+            Prediction: <strong>{{ prediction }}</strong>
+        </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
