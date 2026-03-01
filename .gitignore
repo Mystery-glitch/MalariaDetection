@@ -18,3 +18,5 @@ Thumbs.db
 *.zip
 *.tar.gz
 *.h5
+*.pth
+*.pt
